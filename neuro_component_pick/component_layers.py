@@ -9,7 +9,7 @@ ComponentLayers can be assembled into an
 OpticalMesh or put into a NetworkLayer.'''
 
 from functools import reduce
-from typing import Callable, Dict 
+from typing import Callable, Dict
 from typing import Iterable, List, Type
 
 import numpy as np
@@ -17,7 +17,6 @@ from numba import jit, prange
 
 from neuroptica.components import MZI, OpticalComponent, PhaseShifter, _get_mzi_partial_transfer_matrices
 from neuroptica.settings import NP_COMPLEX
-
 
 class ComponentLayer:
     '''Base class for a single physical column of optical components which acts on inputs in parallel.'''
